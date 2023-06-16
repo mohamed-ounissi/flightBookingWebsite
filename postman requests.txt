@@ -1,0 +1,68 @@
+//GET FLIGHTS
+http://localhost:5000/api/flights/Algeria/2023-04-21/First-Class/5
+
+
+//POST FLIGHT
+http://localhost:5000/api/flights/
+
+body
+{
+  "airlineLogo": "http://localhost:5000/images/airlines_images/emirates.png",
+  "leaveIn": "02:00",
+  "arriveAt": "09:20",
+  "goingTo": "DZ",
+  "stops": ["FR"],
+  "date": "2023-04-21",
+  "maxTimeOfFlight": "10h 20m",
+  "class": "First Class",
+  "pricePerPerson": 1322
+}
+
+
+
+//POST DESTINATION
+
+http://localhost:5000/api/destinations/
+
+
+body
+{
+  "name": "Dubai",
+  "mainImage": "http://localhost:5000/images/places_for_cards/dubai.jpg",
+  "mainDesc": "Dubai is a city and emirate in the United Arab Emirates known for its luxury shopping, ultra-modern architecture and vibrant nightlife. The Burj Khalifa, an 830 meter high tower, dominates the cityscape with its skyscrapers.",
+  "country": "United Arab Emirates",
+  "images": ["http://localhost:5000/images/places_for_cards/Dubai/dubai1.jpg","http://localhost:5000/images/places_for_cards/Dubai/dubai2.jpg","http://localhost:5000/images/places_for_cards/Dubai/dubai3.jpg","http://localhost:5000/images/places_for_cards/Dubai/dubai4.jpg","http://localhost:5000/images/places_for_cards/Dubai/dubai5.jpg","http://localhost:5000/images/places_for_cards/Dubai/dubai6.jpg"],
+  "fullDesc": " Attracting more than 12 million foreign visitors every year, Dubai is the Arab world's premier tourist destination, and it's a great place for an Asian vacation. Whenever you go, you can count on sunshine and warm weather. But Dubai is about much more than year-round sun. It's the kind of place where gourmet restaurants seem to multiply every week. From the sushi at Blue Jade to the stunning Indian dishes at Amal, every cuisine seems represented.If you want to experience a desert adventure, you can rent 4x4 vehicles. If you want to play golf every day at challenging courses, you can. If you just want to shop for luxury goods, there's no better place than the Dubai Mall. You can even spend the day snowboarding if that's what you desire.Dubai caters for everyone - with shopping, sports, and cultural attractions that place it right at the top of the global vacation league. Don't miss out."
+}
+
+
+//GET ALL DESTINATION
+
+http://localhost:5000/api/destinations/
+
+
+// GET DEST BY NAME
+
+http://localhost:5000/api/destinations/Dubai
+
+
+// POST CONFIRMATIONS
+
+
+http://localhost:5000/api/confirmations
+
+
+body
+{ "flight_ID":"6442e00770b9fb6921c532d1",
+    "contactEmail":"ounissilol@gmail.com",
+
+    "contactPhone":"+21646266051",
+   
+    "contactAdress":"Tunisia,manouba",
+    "contactPostcode":"1116",
+    "contactCity":"mornguia",  
+    "contactCountry":"Tunisia"  
+}
+
+
+
