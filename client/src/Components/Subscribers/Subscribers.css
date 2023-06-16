@@ -1,0 +1,26 @@
+.subscribe {
+    background: var(--SecondaryColor);
+  }
+  .subscribe .sectionContainer  {
+    text-align: center;
+  }
+  .subscribe .inputDiv {
+    margin-top: 1rem;
+    flex-direction: column;
+    background: var(--WhiteColor);
+    border-radius: 1rem;
+  }
+  .subscribe .inputDiv input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1rem 0.5rem;
+  }
+  .subscribe .inputDiv input:placeholder {
+    font-size: 13px;
+    opacity: 0.5;
+  }
+  .subscribe .inputDiv .btn {
+    width: 100%;
+  }
+  

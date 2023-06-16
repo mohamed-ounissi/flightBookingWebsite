@@ -1,0 +1,92 @@
+.search .sectionContainer {
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid var(--greyBg);
+    border-radius: 16px;
+    row-gap: 2rem;
+  }
+  .search .sectionContainer .btns {
+    background-color: var(--SecondaryColor);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+  .search .sectionContainer .btns .singleBtn {
+    padding: 0.8rem 1.5rem;
+    font-size: 13px;
+    border-radius: 3rem;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .search .sectionContainer .btns .singleBtn:hover {
+    background: #d7dbdb ;
+    color: var(--blackColor);
+    font-weight: 500;
+    transform: 0.4s ease;
+  } .search .sectionContainer .btns .active:hover {
+    background: var(--PrimaryColor);
+    color: var(--WhiteColor);
+    font-weight: 500;
+    transform: 0.4s ease;
+  }
+  .search .sectionContainer .btns .active {
+    background: var(--PrimaryColor);
+    color: var(--WhiteColor);
+    font-weight: 500;
+  }
+  .search .sectionContainer .searchInputs {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+  }
+  /* .singleInput{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  } */
+
+
+  .search .sectionContainer .singleInput .iconDiv {
+    padding: 16px 10px;
+    border-radius: 3rem;
+    background: var(--SecondaryColor);
+    margin-right: 1rem;
+  }
+  .search .sectionContainer .singleInput .iconDiv .icon {
+    color: var(--blackColor);
+    opacity: 0.7;
+  }
+  .search .sectionContainer .singleInput .texts h4 {
+    padding-top: 0;
+    padding-bottom: 0.7rem;
+    color: var(--blackColor);
+    font-weight: 700;
+  }
+  .search .sectionContainer .singleInput .texts input {
+    width: 95%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .search .sectionContainer .singleInput .texts input::placeholder {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+  
+  .search .sectionContainer .btnBlock {
+    justify-content: center;
+}
+
+.date {
+  position: absolute;
+  top: 70px;
+  right: 400px;
+  z-index: 2;
+}
+

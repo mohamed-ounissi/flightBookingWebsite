@@ -1,0 +1,94 @@
+
+
+.loaderAll{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+      
+    .loaderBody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f0f4f4;
+    }
+    
+    
+    .loader{
+        position: relative;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .loader span {
+        position: absolute;
+        top: 0;
+        Left: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotate(calc(18deg * var(--i)));
+    
+    }
+    
+    
+    .loader span::before {
+        content: '';
+        position: absolute;
+        Top: 0;
+        Left: 0;
+        width: 15px;
+        height: 15px;
+        background: #084593;
+        border-radius: 50%;
+        transform: scale(0);
+        animation: animate 2s linear infinite; 
+        animation-delay: calc(0.1s * var(--i));
+    }
+    
+    @keyframes animate
+    {
+        0%
+        {
+            transform: scale(0);
+        }
+        10%{
+            transform: scale(1.2);
+        }
+    
+        80%,100%{
+            transform: scale(0);
+        }
+    }
+    
+    
+    .loadingFlight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: rotating 2s linear infinite;
+        animation-delay: -1s;
+      }
+
+      @keyframes rotating
+      {
+        0%{
+            transform: rotate(10deg);
+        }
+        100%{
+            transform: rotate(370deg);
+        }
+      }
+      
+      .loadingFlight > svg {
+        position: absolute;
+        top: 80px;
+        left: 85px;
+       
+        color: #084593;
+        font-size: 60px;
+        transform: rotate(120deg);
+      }

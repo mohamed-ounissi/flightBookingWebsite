@@ -1,0 +1,47 @@
+.info {
+    background: var(--SecondaryColor);
+  }
+  .info .infoContainer .titleDiv {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  .info .infoContainer .cardsDiv {
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .info .infoContainer .cardsDiv .singleCard {
+    background: var(--WhiteColor);
+    padding: 3rem 2rem;
+    border-radius: 10rem;
+    gap: 1rem;
+    text-align: center;
+    margin: auto;
+    height: 320px;
+    width: 90%;
+    max-width: 250px;
+  }
+  .info .infoContainer .cardsDiv .singleCard .iconDiv {
+    justify-content: center;
+    margin: auto;
+    background: var(--PrimaryColor);
+    width: max-content;
+    height: 55px;
+    padding: 1rem;
+    border-radius: 3rem;
+  }
+  .info .infoContainer .cardsDiv .singleCard .iconDiv .icon {
+    color: var(--WhiteColor);
+  }
+  .info .infoContainer .cardsDiv .singleCard .cardTitle {
+    color: var(--blackColor);
+    font-weight: 700;
+  }
+  .info .infoContainer .cardsDiv .singleCard .colorOne {
+    background-color: var(--ColorOne);
+  }
+  .info .infoContainer .cardsDiv .singleCard .colorTwo {
+    background-color: var(--ColorTwo);
+  }
+  

@@ -1,0 +1,26 @@
+.test1 {
+  margin-bottom: 50px!important;
+}
+
+.sc-dmqHEX.eIUhNB{
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 1138px) {
+    .test1  {
+        margin-left:20px!important ;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .test1  {
+        margin-right:20px!important ;
+    }
+
+    .sc-dmqHEX.eIUhNB{    margin-left: 10%;
+        margin-bottom: 250px;}
+}
+
+.sc-hLseeU.gMfEjJ.test1{
+    cursor: pointer;
+}

@@ -1,0 +1,197 @@
+
+.registerContainer {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .registerLeftContainer {
+    background-color: #f0f4f4;
+    flex: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .registerLeftTitle {
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .registerLeftColoredTitle {
+    color: #084593;
+  }
+  
+  .registerImage {
+    width: 67%;
+  }
+  
+  .registerFormContainer {
+    flex: 45%;
+    padding: 0 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .registerTitle {
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 0 0 8px;
+  }
+  
+  .registerDescription {
+    font-size: 14px;
+    color: #7a7f88;
+    font-weight: 700;
+  }
+  
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  
+  .registerFormInputError {
+    font-size: 14px;
+    font-weight: 500;
+    color: #d32f2f;
+    line-height: 1;
+  }
+  
+  .underPasswordContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .registerTerms {
+    margin: 34px 0 40px;
+    font-size: 12px;
+  }
+  
+  .registerButton {
+    border-radius: 4px;
+    background-color: #084593;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 16.5px;
+    margin-top: 8px;
+    cursor: pointer;
+    border:none ;
+  }
+  
+  .registerButton:hover {
+    background-color: rgba(8, 69, 147, 0.9);
+  }
+  
+  .registerLogInContainer {
+    margin-top: 32px;
+  }
+  
+  .registerLogInText {
+    color: #344563;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 3px;
+  }
+  
+  .registerLogInLink {
+    margin-left: 5px;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .registerLogInLink:hover {
+    color: #1877f2;
+  }
+  
+  .registerHomeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .registerHomeIconLink {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #084593;
+    border-radius: 100px;
+    margin-top: 16px;
+  }
+  
+  .registerHomeIcon {
+    color: #084593;
+  }
+  
+  @media (max-width: 769px) {
+    .registerLeftContainer {
+      display: none;
+    }
+  
+    .registerFormContainer {
+      background-color: #ecfef2;
+      padding-left: 0;
+      padding-right: 0;
+      align-items: center;
+    }
+  
+    .registerFormTitleContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 290.4px;
+    }
+  
+    .registerLogInContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .registerHomeContainer {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .registerFormTitleContainer {
+      max-width: 210px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .registerInput,
+    .registerButton {
+      width: 210px;
+      font-size: 12px;
+    }
+  }
+
+  .error{
+    color: red;
+  }
+
+  #popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  }
